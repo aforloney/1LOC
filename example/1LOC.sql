@@ -1,6 +1,6 @@
 -- EXMAPLE DB STRUCTURE
 -- can be invoked via, path/to/mysql --user=root --verbose < path/to/sql
---  	(ie, C:\wamp\bin\mysql\mysql5.5.24\bin\mysql --user=root --verbose < %CD%\1LOC.sql)
+--  	(assuming WAMP is installed -- ie, C:\wamp\bin\mysql\mysql5.5.24\bin\mysql --user=root --verbose < %CD%\1LOC.sql)
 -- drop/create the database
 
 DROP DATABASE IF EXISTS oloc;
@@ -10,7 +10,7 @@ CREATE DATABASE oloc;
 
 USE oloc;
 
--- need a table to stop user registration
+-- need a table to store user registration
 
 CREATE TABLE users (id INT AUTO_INCREMENT NOT NULL,
 					username VARCHAR(30) NOT NULL,
